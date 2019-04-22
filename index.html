@@ -4,10 +4,130 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="stylesheet" href="public/stylesheets/main.css" />
-		<title>Document</title>
+		<link rel="stylesheet" href="public/styles/main.css" />
+		<title>Toronto Raptors Survey</title>
 	</head>
 	<body>
-		<h1>Hello World!</h1>
+		<!-- Title block and description -->
+		<div id="title--block">
+			<h1 id="title">Survey Form</h1>
+			<p id="description">Survey description here</p>
+		</div>
+		<!-- Acquire users personal info-->
+		<form action="GET" id="survey-form">
+			<div>
+				<label for="name" id="name-label">Name</label>
+				<input
+					id="name"
+					type="text"
+					name="name"
+					placeholder="Enter your name"
+					required
+				/>
+			</div>
+
+			<div>
+				<label for="email" id="email-label">Email</label>
+				<input
+					id="email"
+					type="email"
+					name="email"
+					placeholder="Enter your email"
+					required
+				/>
+			</div>
+
+			<div>
+				<label for="number" id="number-label">Age</label>
+				<input
+					id="number"
+					type="number"
+					name="number"
+					min="1"
+					max="100"
+					placeholder="Enter your age"
+					required
+				/>
+			</div>
+			<!-- Select your Favorite Raptors Team -->
+			<div>
+				<label for="dropdown">Which Team is/was Better?</label>
+				<select name="dropdown" id="dropdown">
+					<option value="1">2019 Toronto Raptors</option>
+					<option value="2">2016 Toronto Raptors</option>
+					<option value="3">2001 Toronto Raptors</option>
+				</select>
+			</div>
+			<!-- Acquire level of interest in Raptors -->
+			<div>
+				<label>How much of a Raptors fan are you?</label>
+				<ul>
+					<li class="button--radio">
+						<label for="radio-buttons"
+							><input
+								type="radio"
+								value="1"
+								name="radio-buttons"
+							/>INSANE</label
+						>
+					</li>
+					<li class="button--radio">
+						<label for="radio-buttons"
+							><input
+								type="radio"
+								value="2"
+								name="radio-buttons"
+							/>Average</label
+						>
+					</li>
+					<li class="button--radio">
+						<label for="radio-buttons"
+							><input type="radio" value="3" name="radio-buttons" />Not
+							Really</label
+						>
+					</li>
+				</ul>
+			</div>
+			<!-- Ask what makes people love the raptors -->
+			<div>
+				<label for="checkbox">What Qualities Make you Love the Raptors?</label>
+				<ul>
+					<li class="checkbox">
+						<label for="checkbox1"
+							><input value="1" name="checkbox1" type="checkbox" />They're
+							Canada's only NBA team</label
+						>
+					</li>
+					<li class="checkbox">
+						<label for="checkbox2"
+							><input value="2" name="checkbox2" type="checkbox" />They have
+							your favorite player</label
+						>
+					</li>
+					<li class="checkbox">
+						<label for="checkbox3"
+							><input value="3" name="checkbox3" type="checkbox" />They seem to
+							love the Canadian fans</label
+						>
+					</li>
+				</ul>
+			</div>
+			<!-- Gives option to enter custom information -->
+			<div>
+				<textarea
+					name="textarea"
+					id="textarea--box"
+					cols="30"
+					rows="10"
+					placeholder="Why else do you have to say about the Toronto Raptors?"
+				></textarea>
+			</div>
+
+			<div>
+				<button id="submit">Submit</button>
+			</div>
+		</form>
+
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
 </html>
