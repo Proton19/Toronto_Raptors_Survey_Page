@@ -11,47 +11,53 @@
 		<!-- Title block and description -->
 		<div id="title--block">
 			<h1 id="title">Survey Form</h1>
-			<p id="description">Survey description here</p>
+			<p id="description">
+				Answer these questions and see how much of a Toronto Raptors fan you are
+			</p>
 		</div>
 		<!-- Acquire users personal info-->
 		<form action="GET" id="survey-form">
-			<div>
-				<label for="name" id="name-label">Name</label>
-				<input
-					id="name"
-					type="text"
-					name="name"
-					placeholder="Enter your name"
-					required
-				/>
-			</div>
+			<div id="personal--info">
+				<div id="info--name" class="userinfo">
+					<label for="name" id="name-label" class="label">Name</label>
+					<input
+						id="name"
+						type="text"
+						name="name"
+						placeholder="Enter your name"
+						required
+					/>
+				</div>
 
-			<div>
-				<label for="email" id="email-label">Email</label>
-				<input
-					id="email"
-					type="email"
-					name="email"
-					placeholder="Enter your email"
-					required
-				/>
-			</div>
+				<div id="info--email" class="userinfo">
+					<label for="email" id="email-label" class="label">Email</label>
+					<input
+						id="email"
+						type="email"
+						name="email"
+						placeholder="Enter your email"
+						required
+					/>
+				</div>
 
-			<div>
-				<label for="number" id="number-label">Age</label>
-				<input
-					id="number"
-					type="number"
-					name="number"
-					min="1"
-					max="100"
-					placeholder="Enter your age"
-					required
-				/>
+				<div id="info--number" class="userinfo">
+					<label for="number" id="number-label" class="label">Age</label>
+					<input
+						id="number"
+						type="number"
+						name="number"
+						min="1"
+						max="100"
+						placeholder="Enter your age"
+						required
+					/>
+				</div>
 			</div>
 			<!-- Select your Favorite Raptors Team -->
-			<div>
-				<label for="dropdown">Which Team is/was Better?</label>
+			<div id="team-select">
+				<label for="dropdown" class="dropdown-label"
+					>Which Team is/was Better?</label
+				>
 				<select name="dropdown" id="dropdown">
 					<option value="1">2019 Toronto Raptors</option>
 					<option value="2">2016 Toronto Raptors</option>
@@ -59,7 +65,7 @@
 				</select>
 			</div>
 			<!-- Acquire level of interest in Raptors -->
-			<div>
+			<div id="radio-select">
 				<label>How much of a Raptors fan are you?</label>
 				<ul>
 					<li class="button--radio">
@@ -68,6 +74,7 @@
 								type="radio"
 								value="1"
 								name="radio-buttons"
+								class="button--radio-label"
 							/>INSANE</label
 						>
 					</li>
@@ -77,21 +84,26 @@
 								type="radio"
 								value="2"
 								name="radio-buttons"
+								class="button--radio-label"
 							/>Average</label
 						>
 					</li>
 					<li class="button--radio">
 						<label for="radio-buttons"
-							><input type="radio" value="3" name="radio-buttons" />Not
-							Really</label
+							><input
+								type="radio"
+								value="3"
+								name="radio-buttons"
+								class="button--radio-label"
+							/>Not Really</label
 						>
 					</li>
 				</ul>
 			</div>
 			<!-- Ask what makes people love the raptors -->
-			<div>
+			<div id="checkboxs">
 				<label for="checkbox">What Qualities Make you Love the Raptors?</label>
-				<ul>
+				<ul class="checkbox--list">
 					<li class="checkbox">
 						<label for="checkbox1"
 							><input value="1" name="checkbox1" type="checkbox" />They're
