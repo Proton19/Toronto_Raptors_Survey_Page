@@ -1,5 +1,118 @@
+body {
+	background-color: #a1a1a4;
+	color: white;
+}
+
 #title--block {
 	margin: 0 auto;
 	width: 300px;
 	text-align: center;
+	color: black !important;
+}
+
+#survey-form {
+	background-color: #eb1c22;
+	padding: 30px 20px 30px 20px;
+	height: 600px;
+}
+
+#personal--info {
+	position: relative;
+	left: 50px;
+}
+
+#info--name {
+	margin: 0 auto;
+	width: 300px;
+}
+
+#info--email {
+	margin: 0 auto;
+	width: 300px;
+}
+
+#info--number {
+	margin: 0 auto;
+	width: 300px;
+}
+
+.userinfo {
+	padding: 5px;
+}
+
+.label {
+	padding-right: 10px;
+}
+
+#number {
+	width: 125px;
+	position: relative;
+	left: 11px;
+}
+
+#team-select {
+	margin: 0 auto;
+	width: 600px;
+	position: relative;
+	top: 40px;
+	left: 60px;
+}
+
+.dropdown-label {
+	padding-right: 10px;
+}
+
+#radio-select {
+	margin: 0 auto;
+	width: 600px;
+	position: relative;
+	top: 50px;
+}
+
+.button--radio {
+	list-style-type: none;
+}
+
+.button--radio-label {
+	margin-right: 10px;
+}
+
+div#radio-select > label {
+	position: relative;
+	top: 33px;
+}
+
+div#radio-select > ul {
+	position: relative;
+	left: 207.5px;
+}
+
+#checkboxs {
+	position: relative;
+	top: 60px;
+	left: 343px;
+	width: 500px;
+}
+
+.checkbox {
+	list-style-type: none;
+}
+
+.checkbox--list {
+	position: relative;
+	left: 255px;
+	top: -34px;
+}
+
+#textarea--box {
+	position: relative;
+	top: 55px;
+	left: 300px;
+	width: 800px;
+}
+
+#submit {
+	position: relative;
+	top: 100px;
+	left: 670px;
 }
